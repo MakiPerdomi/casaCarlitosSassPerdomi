@@ -22,7 +22,6 @@ header {
     margin: 0;
     padding: 0;
     background-color: $colorPrincipal;
-    margin-bottom: 0.5rem;
 
     header img {
         margin: 10px;
@@ -62,33 +61,11 @@ header {
 
 .home {
     width: 100%;
-    height: auto;
+    height: 70vh;
     text-align: center;
     color: $colorTipografia;
-    background: url(../img/uniformes.jpg) no-repeat;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/uniformes.jpg");
     background-size: cover;
-    background-position: inherit;
-
-
-    main a {
-        color: $colorTipografia;
-        font-size: 1.7rem;
-        background-color: $colorPrincipal;
-        padding: 1.5rem;
-        margin: 2rem;
-        text-decoration: none;
-        display: inline-block;
-        border-radius: 1rem;
-    }
-
-    main a:hover {
-        transform: scale(1.1);
-    }
-
-    main img {
-        height: 6rem;
-        width: 6rem;
-    }
 
     .tituloPrincipal {
         font-size: 5rem;
@@ -104,6 +81,32 @@ header {
         justify-content: center;
         align-items: center;
     }
+
+    .btnWsp {
+        background-color: lightblue;
+        width: 30%;
+        margin: auto;
+        border-radius: 4px;
+        background-color: $colorPrincipal;
+        padding: 1.5rem;
+        margin: 2rem;
+        display: inline-block;
+        border-radius: 1rem;
+        img {
+            width: 80px;
+            height: 80px;
+        }
+    }
+    
+    .btnWsp a {
+        color: $colorTipografia;
+        font-size: 1.7rem;
+        text-decoration: none;
+    }
+
+    .btnWsp:hover {
+        transform: scale(1.1);
+    }
 }
 
 footer {
@@ -111,5 +114,15 @@ footer {
     background-color: $colorPrincipal;
     color: $colorTipografia;
     font-weight: bolder;
-    margin-top: 0.5rem;
+
+    .logoInstagram{
+        width: 3rem;
+        height: 3rem;
+        margin: 0.5rem;
+    }
+
+    .linkContacto{
+        text-decoration: none;
+        color: white;
+    }
 }

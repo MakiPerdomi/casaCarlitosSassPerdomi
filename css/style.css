@@ -54,8 +54,7 @@ header {
   height: 100%;
   margin: 0;
   padding: 0;
-  background-color: lightblue;
-  margin-bottom: 0.5rem; }
+  background-color: lightblue; }
   header header img {
     margin: 10px;
     text-align: start; }
@@ -82,26 +81,11 @@ header {
 
 .home {
   width: 100%;
-  height: auto;
+  height: 70vh;
   text-align: center;
   color: white;
-  background: url(../img/uniformes.jpg) no-repeat;
-  background-size: cover;
-  background-position: inherit; }
-  .home main a {
-    color: white;
-    font-size: 1.7rem;
-    background-color: lightblue;
-    padding: 1.5rem;
-    margin: 2rem;
-    text-decoration: none;
-    display: inline-block;
-    border-radius: 1rem; }
-  .home main a:hover {
-    transform: scale(1.1); }
-  .home main img {
-    height: 6rem;
-    width: 6rem; }
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/uniformes.jpg");
+  background-size: cover; }
   .home .tituloPrincipal {
     font-size: 5rem;
     font-weight: bold; }
@@ -113,10 +97,35 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center; }
+  .home .btnWsp {
+    background-color: lightblue;
+    width: 30%;
+    margin: auto;
+    border-radius: 4px;
+    background-color: lightblue;
+    padding: 1.5rem;
+    margin: 2rem;
+    display: inline-block;
+    border-radius: 1rem; }
+    .home .btnWsp img {
+      width: 80px;
+      height: 80px; }
+  .home .btnWsp a {
+    color: white;
+    font-size: 1.7rem;
+    text-decoration: none; }
+  .home .btnWsp:hover {
+    transform: scale(1.1); }
 
 footer {
   text-align: center;
   background-color: lightblue;
   color: white;
-  font-weight: bolder;
-  margin-top: 0.5rem; }
+  font-weight: bolder; }
+  footer .logoInstagram {
+    width: 3rem;
+    height: 3rem;
+    margin: 0.5rem; }
+  footer .linkContacto {
+    text-decoration: none;
+    color: white; }
