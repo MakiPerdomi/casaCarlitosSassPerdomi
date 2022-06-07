@@ -20,7 +20,7 @@
         }
     }
 
-    main {
+    .home {
         .tituloPrincipal {
             font-size: 3.5rem;
         }
@@ -29,7 +29,7 @@
             font-size: 1.5rem;
         }
 
-        a {
+        .btnWsp {
             margin: 1rem;
             font-size: 1.4rem;
             padding: 1rem;
@@ -39,6 +39,98 @@
         img {
             height: 2rem;
             width: 2rem;
+        }
+    }
+
+    /* media queries (mq) - sobreNosotros.html */
+    .infoSobreNosotros {
+        .sobreNosotrosMain img {
+            height: 50%;
+            width: 100%;
+            margin: 60px 30px;
+        }
+
+        .sobreNosotrosSection {
+            font-size: 1.3rem;
+            margin: 30px;
+        }
+    }
+
+    /* media queries (mq) - bebesyNinos.html */
+    .mainBebesYNinos {
+        .gamise img {
+            height: 300px;
+            width: 300px;
+            margin: 10px;
+        }
+
+        .panalera img {
+            height: 500px;
+            width: 700px;
+            margin: 10px;
+        }
+
+        .infantil img {
+            height: 300px;
+            width: 300px;
+            margin: 10px;
+        }
+    }
+
+    /* media queries (mq) - colegios.html*/
+    .infoColegios {
+        .colegiosBody {
+            display: grid;
+            height: 100vh;
+            grid-template-areas: "header header"
+                "main main"
+                "div1 div2"
+                "div3 div4"
+                "footer footer";
+            grid-template-rows: 145px 100px 300px 450px;
+            gap: 10px;
+        }
+
+        .colegiosMain {
+            text-align: center;
+            color: rgb(44, 44, 126);
+            font-size: 1.3rem;
+            grid-area: main;
+        }
+
+        .div1 img {
+            grid-area: div1;
+            height: 350px;
+            width: 350px;
+            margin: 10px;
+        }
+
+        .div2 img {
+            height: 350px;
+            width: 350px;
+            grid-area: div2;
+            margin: 10px;
+        }
+
+        .div3 img {
+            height: 350px;
+            width: 350px;
+            grid-area: div3;
+            margin: 10px;
+        }
+
+        .div4 img {
+            height: 350px;
+            width: 350px;
+            grid-area: div4;
+            margin: 10px;
+        }
+    }
+
+    /* media queries (mq) - ubicacion.html*/
+    .ubicacionMain {
+        .frenteLocal {
+            display: none;
         }
     }
 }

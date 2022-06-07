@@ -13,18 +13,74 @@
     text-align: end;
     list-style-type: none;
     color: white; }
-  main .tituloPrincipal {
+  .home .tituloPrincipal {
     font-size: 3.5rem; }
-  main .lema {
+  .home .lema {
     font-size: 1.5rem; }
-  main a {
+  .home .btnWsp {
     margin: 1rem;
     font-size: 1.4rem;
     padding: 1rem;
     border-radius: 1rem; }
-  main img {
+  .home img {
     height: 2rem;
-    width: 2rem; } }
+    width: 2rem; }
+  /* media queries (mq) - sobreNosotros.html */
+  .infoSobreNosotros .sobreNosotrosMain img {
+    height: 50%;
+    width: 100%;
+    margin: 60px 30px; }
+  .infoSobreNosotros .sobreNosotrosSection {
+    font-size: 1.3rem;
+    margin: 30px; }
+  /* media queries (mq) - bebesyNinos.html */
+  .mainBebesYNinos .gamise img {
+    height: 300px;
+    width: 300px;
+    margin: 10px; }
+  .mainBebesYNinos .panalera img {
+    height: 500px;
+    width: 700px;
+    margin: 10px; }
+  .mainBebesYNinos .infantil img {
+    height: 300px;
+    width: 300px;
+    margin: 10px; }
+  /* media queries (mq) - colegios.html*/
+  .infoColegios .colegiosBody {
+    display: grid;
+    height: 100vh;
+    grid-template-areas: "header header" "main main" "div1 div2" "div3 div4" "footer footer";
+    grid-template-rows: 145px 100px 300px 450px;
+    gap: 10px; }
+  .infoColegios .colegiosMain {
+    text-align: center;
+    color: #2c2c7e;
+    font-size: 1.3rem;
+    grid-area: main; }
+  .infoColegios .div1 img {
+    grid-area: div1;
+    height: 350px;
+    width: 350px;
+    margin: 10px; }
+  .infoColegios .div2 img {
+    height: 350px;
+    width: 350px;
+    grid-area: div2;
+    margin: 10px; }
+  .infoColegios .div3 img {
+    height: 350px;
+    width: 350px;
+    grid-area: div3;
+    margin: 10px; }
+  .infoColegios .div4 img {
+    height: 350px;
+    width: 350px;
+    grid-area: div4;
+    margin: 10px; }
+  /* media queries (mq) - ubicacion.html*/
+  .ubicacionMain .frenteLocal {
+    display: none; } }
 
 @media screen and (max-width: 320px) {
   .home .tituloPrincipal {
@@ -129,3 +185,155 @@ footer {
   footer .linkContacto {
     text-decoration: none;
     color: white; }
+
+/* estilos de sobrenosotros.html */
+.infoSobreNosotros .sobreNosotrosMain img {
+  height: 30%;
+  width: 90%;
+  margin: 30px; }
+
+.infoSobreNosotros .sobreNosotrosSection {
+  font-size: 1.5rem;
+  margin: 30px; }
+
+/* estilos de colegios.html */
+.colegiosBody .colegiosMain {
+  text-align: center;
+  color: #2c2c7e;
+  font-size: 1.7rem; }
+
+.colegiosBody .div1 {
+  text-align: center;
+  color: #2c2c7e;
+  font-size: 1.5rem; }
+
+.colegiosBody .div1 img {
+  height: 350px;
+  width: 350px; }
+
+.colegiosBody .div1:hover {
+  transform: scale(1.1); }
+
+.colegiosBody .div2 {
+  text-align: center;
+  color: #2c2c7e;
+  font-size: 1.5rem; }
+
+.colegiosBody .div2:hover {
+  transform: scale(1.1); }
+
+.colegiosBody .div2 img {
+  height: 350px;
+  width: 350px; }
+
+.colegiosBody .div3 {
+  text-align: center;
+  color: #2c2c7e;
+  font-size: 1.5rem; }
+
+.colegiosBody .div3:hover {
+  transform: scale(1.1); }
+
+.colegiosBody .div3 img {
+  height: 350px;
+  width: 350px; }
+
+.colegiosBody .div4 {
+  text-align: center;
+  color: #2c2c7e;
+  font-size: 1.5rem; }
+
+.colegiosBody .div4:hover {
+  transform: scale(1.1); }
+
+.colegiosBody .div4 img {
+  height: 350px;
+  width: 350px; }
+
+/* estilo de contacto.html */
+.homeContacto {
+  width: 100%;
+  height: 95vh;
+  text-align: center;
+  color: white;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/uniformes.jpg");
+  background-size: cover; }
+  .homeContacto .contacto {
+    font-size: 1.9rem;
+    text-align: center;
+    background-color: lightblue;
+    margin: 10px;
+    padding: 1rem;
+    color: white; }
+  .homeContacto form {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: lightblue; }
+  .homeContacto form input {
+    width: 90%;
+    height: 30px;
+    margin: 0.5rem; }
+
+/* estilo de ubicacion.html */
+.ubicacionBody .ubicacionMain {
+  height: 1fr;
+  width: 1fr;
+  grid-area: main;
+  justify-self: center;
+  margin: 20px; }
+
+.ubicacionBody .ubicacionMain img {
+  height: 400px;
+  width: 600px;
+  grid-area: div;
+  justify-self: center;
+  margin: 20px; }
+
+.ubicacionBody .inframeDiv {
+  height: 500px;
+  width: 700px;
+  grid-area: div;
+  justify-self: center;
+  margin: 50px 30px; }
+
+/* estilo de bebesyninos.html */
+.mainBebesYNinos .gamise h1 {
+  font-size: 1.5rem;
+  text-align: center;
+  background-color: #50b6d7;
+  margin: 10px;
+  color: white; }
+
+.mainBebesYNinos .gamise img {
+  height: 400px;
+  width: 400px;
+  margin: 10px; }
+
+.mainBebesYNinos .panalera p {
+  font-size: 1.5rem;
+  text-align: center;
+  background-color: #50b6d7;
+  margin: 10px;
+  color: white; }
+
+.mainBebesYNinos .panalera img {
+  height: 400px;
+  width: 700px;
+  margin: 10px 300px; }
+
+.mainBebesYNinos .infantil p {
+  font-size: 1.5rem;
+  text-align: center;
+  background-color: #50b6d7;
+  margin: 10px;
+  color: white; }
+
+.mainBebesYNinos .infantil img {
+  height: 400px;
+  width: 400px;
+  margin: 10px; }

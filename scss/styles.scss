@@ -1,4 +1,3 @@
-
 //import
 
 @import "utilities/variables";
@@ -92,12 +91,13 @@ header {
         margin: 2rem;
         display: inline-block;
         border-radius: 1rem;
+
         img {
             width: 80px;
             height: 80px;
         }
     }
-    
+
     .btnWsp a {
         color: $colorTipografia;
         font-size: 1.7rem;
@@ -115,14 +115,208 @@ footer {
     color: $colorTipografia;
     font-weight: bolder;
 
-    .logoInstagram{
+    .logoInstagram {
         width: 3rem;
         height: 3rem;
         margin: 0.5rem;
     }
 
-    .linkContacto{
+    .linkContacto {
         text-decoration: none;
         color: white;
+    }
+}
+
+/* estilos de sobrenosotros.html */
+
+.infoSobreNosotros {
+    .sobreNosotrosMain img {
+        height: 30%;
+        width: 90%;
+        margin: 30px;
+    }
+
+    .sobreNosotrosSection {
+        font-size: 1.5rem;
+        margin: 30px;
+    }
+}
+
+/* estilos de colegios.html */
+
+.colegiosBody {
+    .colegiosMain {
+        text-align: center;
+        color: rgb(44, 44, 126);
+        font-size: 1.7rem;
+    }
+
+    .div1 {
+        text-align: center;
+        color: rgb(44, 44, 126);
+        font-size: 1.5rem;
+    }
+
+    .div1 img {
+        height: 350px;
+        width: 350px;
+    }
+
+    .div1:hover {
+        transform: scale(1.1);
+    }
+
+    .div2 {
+        text-align: center;
+        color: rgb(44, 44, 126);
+        font-size: 1.5rem;
+    }
+
+    .div2:hover {
+        transform: scale(1.1);
+    }
+
+    .div2 img {
+        height: 350px;
+        width: 350px;
+    }
+
+    .div3 {
+        text-align: center;
+        color: rgb(44, 44, 126);
+        font-size: 1.5rem;
+    }
+
+    .div3:hover {
+        transform: scale(1.1);
+    }
+
+    .div3 img {
+        height: 350px;
+        width: 350px;
+    }
+
+    .div4 {
+        text-align: center;
+        color: rgb(44, 44, 126);
+        font-size: 1.5rem;
+    }
+
+    .div4:hover {
+        transform: scale(1.1);
+    }
+
+    .div4 img {
+        height: 350px;
+        width: 350px;
+    }
+}
+
+/* estilo de contacto.html */
+
+.homeContacto {
+    width: 100%;
+    height: 95vh;
+    text-align: center;
+    color: $colorTipografia;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/uniformes.jpg");
+    background-size: cover;
+    .contacto {
+        font-size: 1.9rem;
+        text-align: center;
+        background-color: lightblue;
+        margin: 10px;
+        padding: 1rem;
+        color: white;
+    }
+
+    form {
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: lightblue;
+    }
+
+    form input {
+        width: 90%;
+        height: 30px;
+        margin: 0.5rem;
+    }
+}
+
+/* estilo de ubicacion.html */
+.ubicacionBody {
+    .ubicacionMain {
+        height: 1fr;
+        width: 1fr;
+        grid-area: main;
+        justify-self: center;
+        margin: 20px;
+    }
+
+    .ubicacionMain img {
+        height: 400px;
+        width: 600px;
+        grid-area: div;
+        justify-self: center;
+        margin: 20px;
+    }
+
+    .inframeDiv {
+        height: 500px;
+        width: 700px;
+        grid-area: div;
+        justify-self: center;
+        margin: 50px 30px;
+    }
+}
+
+/* estilo de bebesyninos.html */
+
+.mainBebesYNinos {
+    .gamise h1 {
+        font-size: 1.5rem;
+        text-align: center;
+        background-color: rgb(80, 182, 215);
+        margin: 10px;
+        color: white;
+    }
+
+    .gamise img {
+        height: 400px;
+        width: 400px;
+        margin: 10px;
+    }
+
+    .panalera p {
+        font-size: 1.5rem;
+        text-align: center;
+        background-color: rgb(80, 182, 215);
+        margin: 10px;
+        color: white;
+    }
+
+    .panalera img {
+        height: 400px;
+        width: 700px;
+        margin: 10px 300px;
+    }
+
+    .infantil p {
+        font-size: 1.5rem;
+        text-align: center;
+        background-color: rgb(80, 182, 215);
+        margin: 10px;
+        color: white;
+    }
+
+    .infantil img {
+        height: 400px;
+        width: 400px;
+        margin: 10px;
     }
 }
