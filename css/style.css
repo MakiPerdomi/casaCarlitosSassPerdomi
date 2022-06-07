@@ -96,6 +96,15 @@
     height: 1rem;
     width: 1rem; } }
 
+.colegiosBody .div1, .colegiosBody .div2, .colegiosBody .div3, .colegiosBody .div4 {
+  text-align: center;
+  color: #2c2c7e;
+  font-size: 1.5rem; }
+
+.colegiosBody .div1 img, .colegiosBody .div2 img, .colegiosBody .div3 img, .colegiosBody .div4 img {
+  width: 350px;
+  height: 350px; }
+
 /*reset*/
 * {
   margin: 0;
@@ -188,8 +197,8 @@ footer {
 
 /* estilos de sobrenosotros.html */
 .infoSobreNosotros .sobreNosotrosMain img {
-  height: 30%;
   width: 90%;
+  height: 30%;
   margin: 30px; }
 
 .infoSobreNosotros .sobreNosotrosSection {
@@ -202,53 +211,17 @@ footer {
   color: #2c2c7e;
   font-size: 1.7rem; }
 
-.colegiosBody .div1 {
-  text-align: center;
-  color: #2c2c7e;
-  font-size: 1.5rem; }
-
-.colegiosBody .div1 img {
-  height: 350px;
-  width: 350px; }
-
 .colegiosBody .div1:hover {
   transform: scale(1.1); }
-
-.colegiosBody .div2 {
-  text-align: center;
-  color: #2c2c7e;
-  font-size: 1.5rem; }
 
 .colegiosBody .div2:hover {
   transform: scale(1.1); }
 
-.colegiosBody .div2 img {
-  height: 350px;
-  width: 350px; }
-
-.colegiosBody .div3 {
-  text-align: center;
-  color: #2c2c7e;
-  font-size: 1.5rem; }
-
 .colegiosBody .div3:hover {
   transform: scale(1.1); }
 
-.colegiosBody .div3 img {
-  height: 350px;
-  width: 350px; }
-
-.colegiosBody .div4 {
-  text-align: center;
-  color: #2c2c7e;
-  font-size: 1.5rem; }
-
 .colegiosBody .div4:hover {
   transform: scale(1.1); }
-
-.colegiosBody .div4 img {
-  height: 350px;
-  width: 350px; }
 
 /* estilo de contacto.html */
 .homeContacto {
@@ -281,22 +254,22 @@ footer {
 
 /* estilo de ubicacion.html */
 .ubicacionBody .ubicacionMain {
-  height: 1fr;
   width: 1fr;
+  height: 1fr;
   grid-area: main;
   justify-self: center;
   margin: 20px; }
 
 .ubicacionBody .ubicacionMain img {
-  height: 400px;
   width: 600px;
+  height: 400px;
   grid-area: div;
   justify-self: center;
   margin: 20px; }
 
 .ubicacionBody .inframeDiv {
-  height: 500px;
   width: 700px;
+  height: 500px;
   grid-area: div;
   justify-self: center;
   margin: 50px 30px; }
@@ -310,8 +283,8 @@ footer {
   color: white; }
 
 .mainBebesYNinos .gamise img {
-  height: 400px;
   width: 400px;
+  height: 400px;
   margin: 10px; }
 
 .mainBebesYNinos .panalera p {
@@ -322,8 +295,8 @@ footer {
   color: white; }
 
 .mainBebesYNinos .panalera img {
-  height: 400px;
   width: 700px;
+  height: 400px;
   margin: 10px 300px; }
 
 .mainBebesYNinos .infantil p {
@@ -334,6 +307,6 @@ footer {
   color: white; }
 
 .mainBebesYNinos .infantil img {
-  height: 400px;
   width: 400px;
+  height: 400px;
   margin: 10px; }

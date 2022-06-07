@@ -1,7 +1,10 @@
 //import
 
 @import "utilities/variables";
-@import "utilities/medias";
+@import "components/medias";
+@import "utilities/mixins";
+@import "utilities/extend";
+@import "utilities/maps";
 
 /*reset*/
 
@@ -18,12 +21,12 @@
 
 header {
     height: 100%;
-    margin: 0;
+    margin: map-get($map: $margin, $key: margin1);
     padding: 0;
     background-color: $colorPrincipal;
 
     header img {
-        margin: 10px;
+        margin: map-get($map: $margin, $key: margin3);
         text-align: start;
     }
 
@@ -54,13 +57,12 @@ header {
         font-size: 1.5rem;
         color: $colorTipografia;
         display: inline-block;
-        margin: 5px;
+        margin:  map-get($map: $margin, $key: margin2);
     }
 }
 
 .home {
-    width: 100%;
-    height: 70vh;
+    @include medidas (100%, 70vh);
     text-align: center;
     color: $colorTipografia;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/uniformes.jpg");
@@ -116,9 +118,8 @@ footer {
     font-weight: bolder;
 
     .logoInstagram {
-        width: 3rem;
-        height: 3rem;
-        margin: 0.5rem;
+        @include medidas (3rem, 3rem);
+        margin:  map-get($map: $margin, $key: margin4);
     }
 
     .linkContacto {
@@ -131,8 +132,7 @@ footer {
 
 .infoSobreNosotros {
     .sobreNosotrosMain img {
-        height: 30%;
-        width: 90%;
+        @include medidas (90%, 30%);
         margin: 30px;
     }
 
@@ -152,14 +152,11 @@ footer {
     }
 
     .div1 {
-        text-align: center;
-        color: rgb(44, 44, 126);
-        font-size: 1.5rem;
+        @extend %nombresColegios;
     }
 
     .div1 img {
-        height: 350px;
-        width: 350px;
+        @extend %imagenesColegios;
     }
 
     .div1:hover {
@@ -167,9 +164,7 @@ footer {
     }
 
     .div2 {
-        text-align: center;
-        color: rgb(44, 44, 126);
-        font-size: 1.5rem;
+        @extend %nombresColegios;
     }
 
     .div2:hover {
@@ -177,14 +172,11 @@ footer {
     }
 
     .div2 img {
-        height: 350px;
-        width: 350px;
+        @extend %imagenesColegios;
     }
 
     .div3 {
-        text-align: center;
-        color: rgb(44, 44, 126);
-        font-size: 1.5rem;
+        @extend %nombresColegios;
     }
 
     .div3:hover {
@@ -192,14 +184,11 @@ footer {
     }
 
     .div3 img {
-        height: 350px;
-        width: 350px;
+        @extend %imagenesColegios;
     }
 
     .div4 {
-        text-align: center;
-        color: rgb(44, 44, 126);
-        font-size: 1.5rem;
+        @extend %nombresColegios;
     }
 
     .div4:hover {
@@ -207,16 +196,14 @@ footer {
     }
 
     .div4 img {
-        height: 350px;
-        width: 350px;
+        @extend %imagenesColegios;
     }
 }
 
 /* estilo de contacto.html */
 
 .homeContacto {
-    width: 100%;
-    height: 95vh;
+    @include medidas (100%, 95vh);
     text-align: center;
     color: $colorTipografia;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/uniformes.jpg");
@@ -225,7 +212,7 @@ footer {
         font-size: 1.9rem;
         text-align: center;
         background-color: lightblue;
-        margin: 10px;
+        margin:  map-get($map: $margin, $key: margin3);
         padding: 1rem;
         color: white;
     }
@@ -242,8 +229,7 @@ footer {
     }
 
     form input {
-        width: 90%;
-        height: 30px;
+        @include medidas (90%, 30px);
         margin: 0.5rem;
     }
 }
@@ -251,24 +237,21 @@ footer {
 /* estilo de ubicacion.html */
 .ubicacionBody {
     .ubicacionMain {
-        height: 1fr;
-        width: 1fr;
+        @include medidas (1fr, 1fr);
         grid-area: main;
         justify-self: center;
-        margin: 20px;
+        margin:  map-get($map: $margin, $key: margin5);
     }
 
     .ubicacionMain img {
-        height: 400px;
-        width: 600px;
+        @include medidas (600px, 400px);
         grid-area: div;
         justify-self: center;
-        margin: 20px;
+        margin: map-get($map: $margin, $key: margin5);
     }
 
     .inframeDiv {
-        height: 500px;
-        width: 700px;
+        @include medidas (700px, 500px);
         grid-area: div;
         justify-self: center;
         margin: 50px 30px;
@@ -282,13 +265,12 @@ footer {
         font-size: 1.5rem;
         text-align: center;
         background-color: rgb(80, 182, 215);
-        margin: 10px;
+        margin: map-get($map: $margin, $key: margin3);
         color: white;
     }
 
     .gamise img {
-        height: 400px;
-        width: 400px;
+        @include medidas (400px, 400px);
         margin: 10px;
     }
 
@@ -296,13 +278,12 @@ footer {
         font-size: 1.5rem;
         text-align: center;
         background-color: rgb(80, 182, 215);
-        margin: 10px;
+        margin: map-get($map: $margin, $key: margin3);
         color: white;
     }
 
     .panalera img {
-        height: 400px;
-        width: 700px;
+        @include medidas (700px, 400px);
         margin: 10px 300px;
     }
 
@@ -310,13 +291,12 @@ footer {
         font-size: 1.5rem;
         text-align: center;
         background-color: rgb(80, 182, 215);
-        margin: 10px;
+        margin: map-get($map: $margin, $key: margin3);
         color: white;
     }
 
     .infantil img {
-        height: 400px;
-        width: 400px;
-        margin: 10px;
+        @include medidas (400px, 400px);
+        margin: map-get($map: $margin, $key: margin3);
     }
 }
