@@ -1,7 +1,6 @@
 //import
 
 @import "utilities/variables";
-@import "components/medias";
 @import "utilities/mixins";
 @import "utilities/extend";
 @import "utilities/maps";
@@ -235,26 +234,11 @@ footer {
 }
 
 /* estilo de ubicacion.html */
-.ubicacionBody {
-    .ubicacionMain {
-        @include medidas (1fr, 1fr);
-        grid-area: main;
-        justify-self: center;
-        margin:  map-get($map: $margin, $key: margin5);
-    }
 
-    .ubicacionMain img {
-        @include medidas (600px, 400px);
-        grid-area: div;
-        justify-self: center;
-        margin: map-get($map: $margin, $key: margin5);
-    }
-
-    .inframeDiv {
-        @include medidas (700px, 500px);
-        grid-area: div;
-        justify-self: center;
-        margin: 50px 30px;
+.ubicacionMain{
+    text-align: center;
+    .infoUbicacion{
+        margin: 15px;
     }
 }
 
@@ -300,3 +284,7 @@ footer {
         margin: map-get($map: $margin, $key: margin3);
     }
 }
+
+/* Import media queries*/
+
+@import "components/medias";
