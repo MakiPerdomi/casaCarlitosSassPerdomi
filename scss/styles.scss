@@ -91,7 +91,7 @@ footer {
     font-weight: bolder;
 
     .logoInstagram {
-        @include medidas (3rem, 3rem);
+        @include medidas (1.5rem, 1.5rem);
         margin:  map-get($map: $margin, $key: margin4);
     }
 
