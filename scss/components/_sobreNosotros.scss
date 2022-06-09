@@ -1,0 +1,13 @@
+/* estilos de sobrenosotros.html */
+
+.infoSobreNosotros {
+    .sobreNosotrosMain img {
+        @include medidas (90%, 30%);
+        margin: 30px;
+    }
+
+    .sobreNosotrosSection {
+        font-size: 1.5rem;
+        margin: 30px;
+    }
+}

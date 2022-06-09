@@ -22,29 +22,11 @@ header {
   margin: 0;
   padding: 0;
   background-color: lightblue; }
-  header header img {
-    margin: 10px;
-    text-align: start; }
-  header header nav {
-    width: 95%;
-    top: 5%;
-    position: absolute;
-    text-align: end;
-    list-style-type: none;
-    color: white;
-    font-size: 1.5rem; }
-  header nav ul li {
-    display: inline-block;
-    justify-self: end; }
   header .nav-link {
-    color: white; }
+    color: white;
+    font-size: x-large; }
   header nav ul li:hover {
     transform: translate(5px, 5px); }
-  header nav ul li a {
-    font-size: 1.5rem;
-    color: white;
-    display: inline-block;
-    margin: 5px; }
 
 .home {
   width: 100%;
@@ -97,15 +79,42 @@ footer {
     text-decoration: none;
     color: white; }
 
-/* estilos de sobrenosotros.html */
-.infoSobreNosotros .sobreNosotrosMain img {
-  width: 90%;
-  height: 30%;
-  margin: 30px; }
-
-.infoSobreNosotros .sobreNosotrosSection {
+/* estilo de bebesyninos.html */
+.mainBebesYNinos .gamise h1 {
   font-size: 1.5rem;
-  margin: 30px; }
+  text-align: center;
+  background-color: #50b6d7;
+  margin: 10px;
+  color: white; }
+
+.mainBebesYNinos .gamise img {
+  width: 400px;
+  height: 400px;
+  margin: 10px; }
+
+.mainBebesYNinos .panalera p {
+  font-size: 1.5rem;
+  text-align: center;
+  background-color: #50b6d7;
+  margin: 10px;
+  color: white; }
+
+.mainBebesYNinos .panalera img {
+  width: 700px;
+  height: 400px;
+  margin: 10px 300px; }
+
+.mainBebesYNinos .infantil p {
+  font-size: 1.5rem;
+  text-align: center;
+  background-color: #50b6d7;
+  margin: 10px;
+  color: white; }
+
+.mainBebesYNinos .infantil img {
+  width: 400px;
+  height: 400px;
+  margin: 10px; }
 
 /* estilos de colegios.html */
 .colegiosBody .colegiosMain {
@@ -154,48 +163,21 @@ footer {
     height: 30px;
     margin: 0.5rem; }
 
+/* estilos de sobrenosotros.html */
+.infoSobreNosotros .sobreNosotrosMain img {
+  width: 90%;
+  height: 30%;
+  margin: 30px; }
+
+.infoSobreNosotros .sobreNosotrosSection {
+  font-size: 1.5rem;
+  margin: 30px; }
+
 /* estilo de ubicacion.html */
 .ubicacionMain {
   text-align: center; }
   .ubicacionMain .infoUbicacion {
     margin: 15px; }
-
-/* estilo de bebesyninos.html */
-.mainBebesYNinos .gamise h1 {
-  font-size: 1.5rem;
-  text-align: center;
-  background-color: #50b6d7;
-  margin: 10px;
-  color: white; }
-
-.mainBebesYNinos .gamise img {
-  width: 400px;
-  height: 400px;
-  margin: 10px; }
-
-.mainBebesYNinos .panalera p {
-  font-size: 1.5rem;
-  text-align: center;
-  background-color: #50b6d7;
-  margin: 10px;
-  color: white; }
-
-.mainBebesYNinos .panalera img {
-  width: 700px;
-  height: 400px;
-  margin: 10px 300px; }
-
-.mainBebesYNinos .infantil p {
-  font-size: 1.5rem;
-  text-align: center;
-  background-color: #50b6d7;
-  margin: 10px;
-  color: white; }
-
-.mainBebesYNinos .infantil img {
-  width: 400px;
-  height: 400px;
-  margin: 10px; }
 
 /* Import media queries*/
 @media screen and (max-width: 768px) {

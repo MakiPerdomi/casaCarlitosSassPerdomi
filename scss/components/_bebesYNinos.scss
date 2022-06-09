@@ -1,0 +1,42 @@
+/* estilo de bebesyninos.html */
+
+.mainBebesYNinos {
+    .gamise h1 {
+        font-size: 1.5rem;
+        text-align: center;
+        background-color: rgb(80, 182, 215);
+        margin: map-get($map: $margin, $key: margin3);
+        color: white;
+    }
+
+    .gamise img {
+        @include medidas (400px, 400px);
+        margin: 10px;
+    }
+
+    .panalera p {
+        font-size: 1.5rem;
+        text-align: center;
+        background-color: rgb(80, 182, 215);
+        margin: map-get($map: $margin, $key: margin3);
+        color: white;
+    }
+
+    .panalera img {
+        @include medidas (700px, 400px);
+        margin: 10px 300px;
+    }
+
+    .infantil p {
+        font-size: 1.5rem;
+        text-align: center;
+        background-color: rgb(80, 182, 215);
+        margin: map-get($map: $margin, $key: margin3);
+        color: white;
+    }
+
+    .infantil img {
+        @include medidas (400px, 400px);
+        margin: map-get($map: $margin, $key: margin3);
+    }
+}

@@ -1,0 +1,57 @@
+/* estilos de colegios.html */
+
+.colegiosBody {
+    .colegiosMain {
+        text-align: center;
+        color: rgb(44, 44, 126);
+        font-size: 1.7rem;
+    }
+
+    .div1 {
+        @extend %nombresColegios;
+    }
+
+    .div1 img {
+        @extend %imagenesColegios;
+    }
+
+    .div1:hover {
+        transform: scale(1.1);
+    }
+
+    .div2 {
+        @extend %nombresColegios;
+    }
+
+    .div2:hover {
+        transform: scale(1.1);
+    }
+
+    .div2 img {
+        @extend %imagenesColegios;
+    }
+
+    .div3 {
+        @extend %nombresColegios;
+    }
+
+    .div3:hover {
+        transform: scale(1.1);
+    }
+
+    .div3 img {
+        @extend %imagenesColegios;
+    }
+
+    .div4 {
+        @extend %nombresColegios;
+    }
+
+    .div4:hover {
+        transform: scale(1.1);
+    }
+
+    .div4 img {
+        @extend %imagenesColegios;
+    }
+}

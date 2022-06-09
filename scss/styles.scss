@@ -24,39 +24,13 @@ header {
     padding: 0;
     background-color: $colorPrincipal;
 
-    header img {
-        margin: map-get($map: $margin, $key: margin3);
-        text-align: start;
-    }
-
-    header nav {
-        width: 95%;
-        top: 5%;
-        position: absolute;
-        text-align: end;
-        list-style-type: none;
-        color: $colorTipografia;
-        font-size: 1.5rem;
-    }
-
-    nav ul li {
-        display: inline-block;
-        justify-self: end;
-    }
-
     .nav-link {
         color: $colorTipografia;
+        font-size: x-large;
     }
 
     nav ul li:hover {
         transform: translate(5px, 5px);
-    }
-
-    nav ul li a {
-        font-size: 1.5rem;
-        color: $colorTipografia;
-        display: inline-block;
-        margin:  map-get($map: $margin, $key: margin2);
     }
 }
 
@@ -127,163 +101,11 @@ footer {
     }
 }
 
-/* estilos de sobrenosotros.html */
-
-.infoSobreNosotros {
-    .sobreNosotrosMain img {
-        @include medidas (90%, 30%);
-        margin: 30px;
-    }
-
-    .sobreNosotrosSection {
-        font-size: 1.5rem;
-        margin: 30px;
-    }
-}
-
-/* estilos de colegios.html */
-
-.colegiosBody {
-    .colegiosMain {
-        text-align: center;
-        color: rgb(44, 44, 126);
-        font-size: 1.7rem;
-    }
-
-    .div1 {
-        @extend %nombresColegios;
-    }
-
-    .div1 img {
-        @extend %imagenesColegios;
-    }
-
-    .div1:hover {
-        transform: scale(1.1);
-    }
-
-    .div2 {
-        @extend %nombresColegios;
-    }
-
-    .div2:hover {
-        transform: scale(1.1);
-    }
-
-    .div2 img {
-        @extend %imagenesColegios;
-    }
-
-    .div3 {
-        @extend %nombresColegios;
-    }
-
-    .div3:hover {
-        transform: scale(1.1);
-    }
-
-    .div3 img {
-        @extend %imagenesColegios;
-    }
-
-    .div4 {
-        @extend %nombresColegios;
-    }
-
-    .div4:hover {
-        transform: scale(1.1);
-    }
-
-    .div4 img {
-        @extend %imagenesColegios;
-    }
-}
-
-/* estilo de contacto.html */
-
-.homeContacto {
-    @include medidas (100%, 95vh);
-    text-align: center;
-    color: $colorTipografia;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/uniformes.jpg");
-    background-size: cover;
-    .contacto {
-        font-size: 1.9rem;
-        text-align: center;
-        background-color: lightblue;
-        margin:  map-get($map: $margin, $key: margin3);
-        padding: 1rem;
-        color: white;
-    }
-
-    form {
-        width: 100%;
-        max-width: 600px;
-        margin: 0 auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background-color: lightblue;
-    }
-
-    form input {
-        @include medidas (90%, 30px);
-        margin: 0.5rem;
-    }
-}
-
-/* estilo de ubicacion.html */
-
-.ubicacionMain{
-    text-align: center;
-    .infoUbicacion{
-        margin: 15px;
-    }
-}
-
-/* estilo de bebesyninos.html */
-
-.mainBebesYNinos {
-    .gamise h1 {
-        font-size: 1.5rem;
-        text-align: center;
-        background-color: rgb(80, 182, 215);
-        margin: map-get($map: $margin, $key: margin3);
-        color: white;
-    }
-
-    .gamise img {
-        @include medidas (400px, 400px);
-        margin: 10px;
-    }
-
-    .panalera p {
-        font-size: 1.5rem;
-        text-align: center;
-        background-color: rgb(80, 182, 215);
-        margin: map-get($map: $margin, $key: margin3);
-        color: white;
-    }
-
-    .panalera img {
-        @include medidas (700px, 400px);
-        margin: 10px 300px;
-    }
-
-    .infantil p {
-        font-size: 1.5rem;
-        text-align: center;
-        background-color: rgb(80, 182, 215);
-        margin: map-get($map: $margin, $key: margin3);
-        color: white;
-    }
-
-    .infantil img {
-        @include medidas (400px, 400px);
-        margin: map-get($map: $margin, $key: margin3);
-    }
-}
+@import "components/bebesYNinos";
+@import "components/colegios";
+@import "components/contacto";
+@import "components/sobreNosotros";
+@import "components/ubicacion";
 
 /* Import media queries*/
 
